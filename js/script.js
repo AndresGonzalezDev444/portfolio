@@ -42,7 +42,17 @@ const certificados = [
     nombre: "Robótica",
     img: "../images/Robotica.svg",
     pdf: "../archivos/Formación Complementaria de Robotica.pdf"
-  }
+  },
+    {
+    nombre: "Excel",
+    img: "../images/certificadoexcel.svg",
+    pdf: "../archivos/certificadoexcel.pdf"
+  },
+  {
+    nombre: "Inglés",
+    img: "../images/certificadoingles.svg",
+    pdf: "../archivos/certificadoingles.pdf"
+  },
 ];
 
 const certGrid = document.getElementById("certGrid");
@@ -103,3 +113,4 @@ function typeEffect() {
 
 // Inicia animación
 document.addEventListener("DOMContentLoaded", typeEffect);
+
