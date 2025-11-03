@@ -188,6 +188,7 @@ h2 {
 
 .about-me {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   margin-left: 70px;
 }
@@ -500,4 +501,5 @@ background-color: #888;
   width: 50px;
   height: 50px;
 }
+
 
