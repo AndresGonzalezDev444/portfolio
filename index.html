@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>andresgonzalezdev</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="header">
+<div class="logo">
+    <img src="../images/perfil.png" alt="logo andres" >
+</div>
+<nav>
+    <ul class="nav-links">
+    <li><a href="#principal">Home</a></li>
+    <li><a href="#aboutme">About me</a></li>
+    <li><a href="#projectsS">Projects</a></li>
+    <li><a href="#certificaciones">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+
+<section class="principal" id="principal">
+    <a href="..//archivos/CV_RobinsonAndres_GonzalezQuintero.pdf" class="downloadCV" download="CV_RobinsonAndres_GonzalezQuintero" >Download CV</a>
+    <h1 id="typewriter"></h1>
+    <h2>Andrés González</h2>
+    <p>Software Developer & Web Designer</p>
+
+    
+    <div class="redes-container">
+    <a href="https://www.linkedin.com/in/andres-gonzalez444" class="btn_redes" target="_blank">Linkedln</a>
+    <a href="#" class="btn_redes">Github</a>
+    </div>
+
+    <div id="leng-p">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" >
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="c++">
+    </div>
+</section>
+
+<!-- about me -->
+<section class="about-me" id="aboutme">
+    <h1>About me</h1>
+    <div class="presentacion">
+      <p>Hi, I'm Andrés González, a <span class="colorfrase">software developer</span> and <span class="colorfrase">web desginer from Colombia.</span> <br>
+      I'm passionate about creating innovative solutions that make a positive impact on people's lives. <br>
+      I have a strong background in programming and have experience working with varius technologies: </p>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html" >
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="js" >
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" >
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" >
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="c++">
+    </div>
+
+    <img src="../images/perfil.png" alt="fotitomia">
+</section>
+
+<!-- Projects -->
+    <div class="projects-section" id="projectsS">
+        <h1 class="main-title">Projects</h1>
+        <h2 class="subtitle">Featured Projects</h2>
+
+        <nav class="category-nav">
+            <button class="category-btn active" data-category="web">Web</button>
+            <button class="category-btn" data-category="python">Python</button>
+            <button class="category-btn" data-category="java">Java</button>
+            <button class="category-btn" data-category="others">Others</button>
+        </nav>
+
+        <!-- WEB CONTENT -->
+        <div class="content-area active" id="web">
+            <h3 class="category-title">Web</h3>
+            
+            <div class="project-item">
+                <div class="project-info">
+                    <h4 class="project-name">Wearartlu</h4>
+                    <p class="project-description">
+                    This is a simple clothing page. <br>
+                    It's static and connected to Google Sheets <br>
+                    and it interacts with 3D objects (.glb).<br>
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://wearartlu.netlify.app/" class="btn" target="_blank">Link</a>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <img src="..//images/paginalu.png" alt="weareartlu preview" id="paginalu">
+                </div>
+            </div>
+        </div>
+
+<!-- PYTHON CONTENT -->
+        <div class="content-area" id="python">
+            <h3 class="category-title">Python</h3>
+            
+            <div class="project-item">
+                <div class="project-info">
+                    <h4 class="project-name">Data Analyzer</h4>
+                    <p class="project-description">
+                        A powerful data analysis tool built with Python<br>
+                        Features data visualization and statistical analysis<br>
+                        Perfect for data scientists and researchers
+                    </p>
+                    <div class="project-buttons">
+                        <a href="#" class="btn">Link</a>
+                        <a href="#" class="btn">Download Project</a>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="tech-icon">
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python project preview">
+                </div>
+            </div>
+        </div>
+
+        <!-- JAVA CONTENT -->
+        <div class="content-area" id="java">
+            <h3 class="category-title">Java</h3>
+            
+            <div class="project-item">
+                <div class="project-info">
+                    <h4 class="project-name">Banking System</h4>
+                    <p class="project-description">
+                        A complete banking management system<br>
+                        Built with Java and Spring Boot<br>
+                        Includes user authentication and transactions
+                    </p>
+                    <div class="project-buttons">
+                        <a href="#" class="btn">Link</a>
+                        <a href="#" class="btn">Download Project</a>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java project preview">
+                </div>
+            </div>
+        </div>
+
+        <!-- OTHERS CONTENT -->
+        <div class="content-area" id="others">
+            <h3 class="category-title">Others</h3>
+            
+            <div class="project-item">
+                <div class="project-info">
+                    <h4 class="project-name">ShadowCam</h4>
+                    <p class="project-description">
+                    ShadowCam is an open-source tool for detecting IP cameras on your local network, testing their access, and managing remote connections easily and securely. Available in Python and with a ready-to-use Windows executable.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="..//html/shadowcam.html" class="btn" target="_blank">Link</a>
+                        <a href="https://drive.google.com/file/d/1DktRYN9AAORe7gOTGkqHmJFsx73lMSCY/view" class="btn" target="_blank">Download Project</a>
+                    </div>
+                    <div class="tech-stack">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kalilinux/kalilinux-original.svg" alt="Nmap-Kali" class="tech-icon">
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <img src="..//images/shadowcam.png" alt="other project preview">
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Certificaciones -->
+  <section id="certificaciones" class="certificaciones">
+    <h2>Certifications</h2>
+    <div class="cert-grid" id="certGrid"></div>
+  </section>
+
+  <!-- Contact -->
+<section class="contacto" id="contact">
+  <h1>Contact</h1>
+  <p>These are my social networks, where you can find me and later contact me.</p>
+  <div class="contactos">
+    <a href="https://www.linkedin.com/in/andres-gonzalez444" class="contacto-item" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="linkedin">
+    </a>
+    <a href="https://github.com/AndresGonzalezDev444" class="contacto-item" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+    </a>
+    <a href="https://www.tiktok.com/@andregonz444" class="contacto-item" target="_blank">
+        <img src="..//images/tiktok.svg" alt="TikTOk">
+    </a>
+    <a href="https://gmail.com/" class="contacto-item" target="_blank" >
+        <img src="..//images/gmail.png" alt="Gmail">
+    </a>
+
+</section>
+<script src="..//js/script.js"></script>
+</body>
+
+
+</html>
