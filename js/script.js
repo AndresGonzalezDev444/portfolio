@@ -23,6 +23,16 @@
 
 // Lista de certificaciones
 const certificados = [
+{
+    nombre: "Bachiller Acádemico",
+    img: "../images/bachillerAcademico.svg",
+    pdf: "../archivos/bachillerAcademico.pdf"
+  },
+  {
+    nombre: "Técnico en Sistemas",
+    img: "../images/tecnicoSistemas.svg",
+    pdf: "../archivos/tecnicoSistemas.pdf"
+  },
   {
     nombre: "Ciberseguridad",
     img: "../images/Certificate Introduction Cybersecurity.svg",
@@ -113,4 +123,5 @@ function typeEffect() {
 
 // Inicia animación
 document.addEventListener("DOMContentLoaded", typeEffect);
+
 
