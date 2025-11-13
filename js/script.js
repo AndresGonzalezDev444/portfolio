@@ -24,7 +24,7 @@
 // Lista de certificaciones
 const certificados = [
 {
-    nombre: "Bachiller Acádemico",
+    nombre: "Bachiller Académico",
     img: "../images/bachillerAcademico.svg",
     pdf: "../archivos/bachillerAcademico.pdf"
   },
@@ -123,5 +123,6 @@ function typeEffect() {
 
 // Inicia animación
 document.addEventListener("DOMContentLoaded", typeEffect);
+
 
 
