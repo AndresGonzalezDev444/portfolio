@@ -351,12 +351,9 @@ background-color: #888;
   height: 250px;
 }
 
-#paginalu{
-  width: 100%;
-  height: 100%;
-  padding-right: 50px;
-  padding-left: 20px;
-}
+#paginalu{ width: 100%; height: 100%; padding-right: 50px; padding-left: 20px; } 
+#codepulse-pag{ width: 100%; height: 100%; padding-right: 50px; padding-left: 20px; }
+
 
 
 .category-nav {
