@@ -67,6 +67,11 @@ const certificados = [
     nombre: "AWS Cloud Security",
     img: "../images/AWS-CloudSecurity.svg",
     pdf: "../archivos/AWS-CloudSecurity.pdf"
+  },
+  {
+    nombre: "HCIA-Big Data V3.5-Huawei",
+    img: "../images/HCIA-BigDataV3.5Course5-RobinsonAndresGonzalezQuintero.svg",
+    pdf: "../archivos/HCIA-BigDataV3.5Course5-RobinsonAndresGonzalezQuintero.pdf"
   }
 
 ];
