@@ -139,8 +139,11 @@ h2 {
 
 .header .logo img {
   height: 50px;
+  width: 50px;
   border-radius: 50%;
   transition: transform 0.3s ease;
+  border: 2px solid rgb(223, 223, 70);
+
 }
 
 .header .logo img:hover {
@@ -210,7 +213,8 @@ h2 {
 }
 
 .about-me img {
-  width: 250px;
+  width: 225px;
+  height: 230px;
   border-radius: 50%;
   margin-left: 70px;
   margin: 0 auto;
