@@ -72,6 +72,11 @@ const certificados = [
     nombre: "HCIA-Big Data V3.5-Huawei",
     img: "../images/HCIA-BigDataV3.5Course5-RobinsonAndresGonzalezQuintero.svg",
     pdf: "../archivos/HCIA-BigDataV3.5Course5-RobinsonAndresGonzalezQuintero.pdf"
+  },
+  {
+    nombre: "Introducción Análisis de Datos",
+    img: "../images/Analisis_de_Datos_Microsoft.svg",
+    pdf: "../archivos/Analisis_de_Datos_Microsoft.pdf"
   }
 
 ];
