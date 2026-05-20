@@ -77,7 +77,12 @@ const certificados = [
     nombre: "Introducción Análisis de Datos",
     img: "../images/Analisis_de_Datos_Microsoft.svg",
     pdf: "../archivos/Analisis_de_Datos_Microsoft.pdf"
-  }
+  },
+  {
+    nombre: "Scrum - Gestión de Proyectos",
+    img: "../images/Scrum-GestionProyectosy-RobinsonAndresGonzalezQuintero.svg",
+    pdf: "../archivos/Scrum-GestionProyectosy-RobinsonAndresGonzalezQuintero.pdf"
+},
 
 ];
 
