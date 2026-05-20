@@ -23,11 +23,11 @@
 
 // Lista de certificaciones
 const certificados = [
-{
-    nombre: "Bachiller Académico",
-    img: "../images/bachillerAcademico.svg",
-    pdf: "../archivos/bachillerAcademico.pdf"
-  },
+// {
+//     nombre: "Bachiller Académico",
+//     img: "../images/bachillerAcademico.svg",
+//     pdf: "../archivos/bachillerAcademico.pdf"
+//   },
   {
     nombre: "Técnico en Sistemas",
     img: "../images/tecnicoSistemas.svg",
