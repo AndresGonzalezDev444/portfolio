@@ -137,14 +137,14 @@ h2 {
   box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
 }
 
-/* .header .logo img {
+.header .logo img {
   height: 70px;
   width: 70px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s ease;
   border: 2px solid rgb(223, 223, 70);
-} */
+}
 
 .header .logo img:hover {
   transform: rotate(-5deg) scale(1.05);
