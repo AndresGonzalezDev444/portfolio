@@ -83,7 +83,11 @@ const certificados = [
     img: "../images/Scrum-GestionProyectosy-RobinsonAndresGonzalezQuintero.svg",
     pdf: "../archivos/Scrum-GestionProyectosy-RobinsonAndresGonzalezQuintero.pdf"
 },
-
+  {
+    nombre: "Introduccion Ciencia de Datos",
+    img: "../images/Introduccion_Cienca_De_Datos-RobinsonGonzalez.svg",
+    pdf: "../archivos/Introduccion_Cienca_De_Datos-RobinsonGonzalez.pdf"
+  },
 ];
 
 
