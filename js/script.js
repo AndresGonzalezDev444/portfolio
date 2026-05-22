@@ -88,6 +88,11 @@ const certificados = [
     img: "../images/Introduccion_Cienca_De_Datos-RobinsonGonzalez.svg",
     pdf: "../archivos/Introduccion_Cienca_De_Datos-RobinsonGonzalez.pdf"
   },
+  {
+    nombre: "Introduction_ThreatLandscape3",
+    img: "../images/Introduction_ThreatLandscape3.svg",
+    pdf: "../archivos/Introduction_ThreatLandscape3.pdf"
+  }
 ];
 
 
