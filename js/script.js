@@ -92,6 +92,11 @@ const certificados = [
     nombre: "Introduction_ThreatLandscape3",
     img: "../images/Introduction_ThreatLandscape3.svg",
     pdf: "../archivos/Introduction_ThreatLandscape3.pdf"
+  },
+  {
+    nombre: "SQLRelationalMongoDB",
+    img: "../images/SQLRelationalMongoDB.svg",
+    pdf: "../archivos/SQLRelationalMongoDB.pdf"
   }
 ];
 
