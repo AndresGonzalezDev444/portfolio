@@ -97,7 +97,13 @@ const certificados = [
     nombre: "SQLRelationalMongoDB",
     img: "../images/SQLRelationalMongoDB.svg",
     pdf: "../archivos/SQLRelationalMongoDB.pdf"
+  },
+  {
+    nombre: "BuildingGenAIApplicationswithMongoDB",
+    img: "../images/BuildingGenAIApplicationswithMongoDB.svg",
+    pdf: "../archivos/GenAIApplicationsMongoDB.pdf"
   }
+
 ];
 
 
