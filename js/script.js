@@ -102,6 +102,12 @@ const certificados = [
     nombre: "GenAIApplicationsMongoDB",
     img: "../images/BuildingGenAIApplicationswithMongoDB.svg",
     pdf: "../archivos/BuildingGenAIApplicationswithMongoDB.pdf"
+  },
+
+  {
+    nombre: "Working-OpenAI-API",
+    img: "../images/Working-OpenAI-API.svg",
+    pdf: "../archivos/Working-OpenAI-API.pdf"
   }
 
 ];
