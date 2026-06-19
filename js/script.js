@@ -108,6 +108,11 @@ const certificados = [
     nombre: "Working-OpenAI-API",
     img: "../images/Working-OpenAI-API.svg",
     pdf: "../archivos/Working-OpenAI-API.pdf"
+  },
+  {
+    nombre: "IBM Web Development Fundamentals",
+    img: "../images/IBM_Web_Development_Fundamentals.svg",
+    pdf: "../archivos/IBM_Web_Development_Fundamentals.pdf"
   }
 
 ];
