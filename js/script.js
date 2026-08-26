@@ -113,6 +113,11 @@ const certificados = [
     nombre: "IBM Web Development Fundamentals",
     img: "../images/IBM_Web_Development_Fundamentals.svg",
     pdf: "../archivos/IBM_Web_Development_Fundamentals.pdf"
+  },
+  {
+    nombre: "Fundamentos de Analisis de Datos",
+    img: "../images/FundamentosdeAnalisisdeDatos-cisco.svg",
+    pdf: "../archivos/FundamentosdeAnalisisdeDatos-cisco.pdf"
   }
 
 ];
