@@ -118,6 +118,11 @@ const certificados = [
     nombre: "Fundamentos de Analisis de Datos",
     img: "../images/FundamentosdeAnalisisdeDatos-cisco.svg",
     pdf: "../archivos/FundamentosdeAnalisisdeDatos-cisco.pdf"
+  },
+  {
+    nombre: "Hacker Etico",
+    img: "../images/Hacker-etico-RobinsonAndresGonzalezQuintero.svg",
+    pdf: "../archivos/Hacker-etico-RobinsonAndresGonzalezQuintero.pdf"
   }
 
 ];
