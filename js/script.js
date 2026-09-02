@@ -123,6 +123,11 @@ const certificados = [
     nombre: "Hacker Etico",
     img: "../images/Hacker-etico-RobinsonAndresGonzalezQuintero.svg",
     pdf: "../archivos/Hacker-etico-RobinsonAndresGonzalezQuintero.pdf"
+  },
+  {
+    nombre: "SCRUM - Desarrollo De Software",
+    img: "../images/SCRUM-DesarrolloDeSoftware-SENA-RobinsonAndresGonzalezQuintero.svg",
+    pdf: "../archivos/SCRUM-DesarrolloDeSoftware-SENA-RobinsonAndresGonzalezQuintero.pdf"
   }
 
 ];
@@ -146,7 +151,7 @@ certificados.forEach(cert => {
 });
 
 // Animación de máquina de escribir para el título
-const titles = ["Software Developer", "Front-End Developer"];
+const titles = ["Software Developer", "FullStack Developer"];
 let currentTitle = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -193,13 +198,15 @@ const themeToggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
 const themeIcon = document.getElementById('theme-icon');
 
-// Comprobar preferencia guardada
+// Comprobar preferencia guardada — claro es el tema por defecto
 const savedTheme = localStorage.getItem('portfolio-theme');
-if (savedTheme === 'light') {
+if (savedTheme === 'dark') {
+    // El usuario eligió oscuro explícitamente
+    updateThemeIcon('dark');
+} else {
+    // Sin preferencia guardada O preferencia clara → modo claro
     body.classList.add('light-mode');
     updateThemeIcon('light');
-} else {
-    updateThemeIcon('dark');
 }
 
 themeToggleBtn.addEventListener('click', () => {
@@ -244,4 +251,198 @@ const appearOnScroll = new IntersectionObserver(function(entries) {
 
 fadeElements.forEach(el => {
     appearOnScroll.observe(el);
+});
+
+
+const youtubeVideos = {
+    "Guia Hack The Box": [
+        {
+            title: "Hack The Box - DANCING",
+            id: "WwFDe4LTZG4",
+            description: "Nmap + SMB + OpenVPN"
+        },
+        {
+          title: "Hack The Box - REDEEMER",
+          id: "PcALijuacOc",
+          description: "Nmap + redis + bd"
+        },
+        {
+          title: "Hack The Box - APPOINTMENT",
+          id: "pzOYBZVSIXk",
+          description: "Nmap + Web + SQL Injection"
+        },
+        {
+          title: "Hack The Box - SEQUEL",
+          id: "EETtRw4ZOXg",
+          description: "Nmap + MariaDB client + SQL"
+        },
+        {
+          title: "Hack The Box - CROCODILE",
+          id: "V4DNP-C6mTY",
+          description: "Nmap + FTP + Gobuster + Web"
+        },
+    ],
+        "Hacking Ético": [
+        {
+            title: "CamPhish + Kali Linux",
+            id: "5amBajP26bw",
+            description: "Kali Linux + CamPhish + Ngrok + Cloudflared + Js"
+        }
+    ]
+};
+
+function getYtThumbnail(videoId) {
+    return `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+}
+
+/* --- Carrusel: cuántas tarjetas se ven según el viewport --- */
+function getCardsPerView() {
+    if (window.innerWidth <= 500) return 1;
+    if (window.innerWidth <= 900) return 2;
+    return 3;
+}
+
+/* --- Instancias de carrusel activos (para resize) --- */
+const ytCarouselInstances = [];
+
+function renderYtCatalog() {
+    const catalog = document.getElementById('ytCatalog');
+    if (!catalog) return;
+
+    Object.entries(youtubeVideos).forEach(([category, videos]) => {
+        const row = document.createElement('div');
+        row.classList.add('yt-category-row');
+
+        /* Header de categoría */
+        const header = document.createElement('div');
+        header.classList.add('yt-category-header');
+        header.innerHTML = `
+            <h3 class="yt-category-title">${category}</h3>
+            <span class="yt-category-count">${videos.length} video${videos.length !== 1 ? 's' : ''}</span>
+        `;
+        row.appendChild(header);
+
+        /* Wrapper: recorta el overflow */
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('yt-carousel-wrapper');
+
+        /* Track: el que se mueve con translateX */
+        const track = document.createElement('div');
+        track.classList.add('yt-carousel');
+
+        /* Tarjetas */
+        videos.forEach(video => {
+            const card = document.createElement('a');
+            card.classList.add('yt-video-card');
+            card.href = `https://www.youtube.com/watch?v=${video.id}`;
+            card.target = '_blank';
+            card.rel = 'noopener noreferrer';
+            card.innerHTML = `
+                <div class="yt-thumbnail-wrap">
+                    <img src="${getYtThumbnail(video.id)}" alt="${video.title}" class="yt-thumbnail" loading="lazy">
+                    <div class="yt-play-overlay">
+                        <div class="yt-play-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="yt-card-info">
+                    <p class="yt-card-title">${video.title}</p>
+                    <p class="yt-card-desc">${video.description}</p>
+                </div>
+            `;
+            track.appendChild(card);
+        });
+
+        wrapper.appendChild(track);
+
+        /* Flechas de navegación */
+        const btnPrev = document.createElement('button');
+        btnPrev.classList.add('yt-arrow', 'yt-arrow--prev');
+        btnPrev.setAttribute('aria-label', 'Anterior');
+        btnPrev.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+
+        const btnNext = document.createElement('button');
+        btnNext.classList.add('yt-arrow', 'yt-arrow--next');
+        btnNext.setAttribute('aria-label', 'Siguiente');
+        btnNext.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>`;
+
+        /* Estado del carrusel */
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const perView   = getCardsPerView();
+            const maxIndex  = Math.max(0, videos.length - perView);
+            const cardEls   = track.querySelectorAll('.yt-video-card');
+            const gap       = 20;
+
+            if (cardEls.length === 0) return;
+
+            /* Ancho de una tarjeta = (contenedor - gaps) / perView */
+            const wrapperW   = wrapper.offsetWidth;
+            const cardWidth  = (wrapperW - gap * (perView - 1)) / perView;
+
+            /* Aplicar ancho a cada tarjeta */
+            cardEls.forEach(c => {
+                c.style.minWidth = cardWidth + 'px';
+                c.style.maxWidth = cardWidth + 'px';
+            });
+
+            /* Clamp currentIndex */
+            currentIndex = Math.min(currentIndex, maxIndex);
+
+            /* Mover track */
+            const offset = currentIndex * (cardWidth + gap);
+            track.style.transform = `translateX(-${offset}px)`;
+
+            /* Estado de las flechas */
+            const showArrows = videos.length > perView;
+            btnPrev.style.display = showArrows ? 'flex' : 'none';
+            btnNext.style.display = showArrows ? 'flex' : 'none';
+
+            btnPrev.disabled = currentIndex === 0;
+            btnNext.disabled = currentIndex >= maxIndex;
+
+            btnPrev.classList.toggle('yt-arrow--disabled', currentIndex === 0);
+            btnNext.classList.toggle('yt-arrow--disabled', currentIndex >= maxIndex);
+        }
+
+        btnPrev.addEventListener('click', () => {
+            const perView = getCardsPerView();
+            currentIndex = Math.max(0, currentIndex - perView);
+            updateCarousel();
+        });
+
+        btnNext.addEventListener('click', () => {
+            const perView  = getCardsPerView();
+            const maxIndex = Math.max(0, videos.length - perView);
+            currentIndex   = Math.min(maxIndex, currentIndex + perView);
+            updateCarousel();
+        });
+
+        /* Contenedor externo con flechas laterales */
+        const carouselOuter = document.createElement('div');
+        carouselOuter.classList.add('yt-carousel-outer');
+        carouselOuter.appendChild(btnPrev);
+        carouselOuter.appendChild(wrapper);
+        carouselOuter.appendChild(btnNext);
+
+        row.appendChild(carouselOuter);
+        catalog.appendChild(row);
+
+        /* Guardar instancia para el resize global */
+        ytCarouselInstances.push(updateCarousel);
+
+        /* Primera renderización */
+        updateCarousel();
+    });
+}
+
+renderYtCatalog();
+
+/* Recalcular todos los carruseles si el viewport cambia */
+window.addEventListener('resize', () => {
+    ytCarouselInstances.forEach(fn => fn());
 });
