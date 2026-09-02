@@ -449,6 +449,14 @@ h1, h2, h3, h4 {
   color: #fff;
 }
 
+.btn--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: var(--text-muted);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
 .tech-stack {
   display: flex;
   gap: 15px;
